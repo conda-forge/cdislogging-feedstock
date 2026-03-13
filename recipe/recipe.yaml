@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 1.1.1
+  version: "1.2.0"
 
 package:
   name: cdislogging
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/c/cdislogging/cdislogging-${{ version }}.tar.gz
-  sha256: 77e11648244cda3a8094b8ae6081435a2303f259612846c49ef8825c7be141e3
+  sha256: ca7511b685bbf0b4727fef85ca4eab78271b4618139a621b09c2846aed6d19d1
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
